@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ethereum grant application - Arthur Gervais & Dawn Song</title>
+    <meta name="description" content="Ethereum grant application. Machine Learning on a network level to find anomalies and enable early warning systems for issues that start occurring."/>
+    <meta name="keywords" content="blockchain, security, machine learning"/>
+    <link rel="stylesheet" href="https://latex.now.sh/style.css">
+</head>
+
+<body>
+<h1>Large Language Models for Anomaly Detection of EVM Transactions</h1>
+<p class="author">
+    Arthur Gervais & Dawn Song<br>
+    <a href="https://twitter.com/HatforceSec">[Twitter]</a>
+    <a href="https://arthurgervais.com">[Website]</a> <a href="https://github.com/arthurgervais">[Github]</a>
+    <a href="https://scholar.google.com.au/citations?user=xEXQBfMAAAAJ&hl=en">[Google Scholar]</a><br>
+    Email: arthur (at) gervais (dot) cc<br> Last Update: February 23, 2023
+</p>
+
+<div class="abstract">
+    <h2>Project Abstract</h2>
+    <p style="text-align:left;">
+        The proposed grant project aims to develop a dynamic and real-time approach for detecting anomalous transactions in Ethereum. The project will focus on building a tool called BlockGPT, which will use tracing representations of blockchain activity and train a scalable GPT-2-based language model to act as a real-time intrusion detection system. The goal is to overcome performance limitations that have hindered traditional methods and provide real-time transaction anomaly detection.
+
+        The proposed tool will be designed and evaluated using Ethereum transactions. The project team will conduct experiments to demonstrate the effectiveness of the proposed tool in identifying abnormal transactions among a dataset of 68M transactions. As such the project will rank abnormal transactions given a dataset of <a href="https://eprint.iacr.org/2022/1773">124 attacks collected in previous work</a>. Finally, we will also measure the tool's throughput, in transactions per second.
+    </p>
+    <p style="text-align:left;">
+        This work aims to make significant contributions to the field of blockchain transaction analysis by introducing a custom data encoding compatible with the GPT transformer, a domain-specific tokenization technique, and a tree encoding method specifically crafted for the EVM trace representation. The proposed grant project will enable the team to develop the BlockGPT tool for anomaly detection of EVM transactions, benefiting the blockchain industry and facilitating secure and efficient blockchain transactions.
+    </p>
+</div>
+
+<main>
+    <article>
+        <h2 id="objectives">Objectives</h2>
+        
+        <ul>
+            <li>
+                What are you hoping to accomplish with this grant?
+            </li>
+            <li>
+                How do you define and measure success for this project?
+            </li>
+        </ul>
+
+        <p style="text-align:left;">
+        With the increasing number of transactions per second processed by permissionless blockchains, the need for scalable and dynamic approaches to detect anomalous blockchain transactions is on the rise. Real-time anomaly detection for blockchain transactions, however, remains challenging due to significant manual engineering efforts required in traditional approaches. In this work, we aim to develop a dynamic and learning-based approach for transaction anomaly detection, utilizing Ethereum as an open dataset to train a transaction anomaly analysis tool, BlockGPT. Our objective is to elevate the art of blockchain security analysis into a dynamic, real-time endeavor, which can be used in a wide range of security-related tasks.
+        </p>
+        <p style="text-align:left;">
+        Our proposed tool, BlockGPT, aims to generate efficient tracing representations of blockchain activity and is intended to be trained on a scalable GPT-2-based language model for anomaly detection. Our hypothesis is that we could potentially train a model to learn representations of transaction execution traces, which will help identify anomalous transactions. We will explore the efficacy of this approach with suitable detection or anomaly thresholds.
+        </p>
+        <p style="text-align:left;">
+        We define the success of this project by the ability of BlockGPT to effectively identify anomalous transactions in real-time with high accuracy, and with a throughput of at least 100 transactions per second. We aim to evaluate the performance of BlockGPT on the Ethereum blockchain, extending a dataset covering attacks over a timeframe of four years. We will measure its effectiveness by ranking the identified abnormal transactions among the top-3 most abnormal transactions interacting with their victim contracts.
+        </p>
+        <p style="text-align:left;">
+        This work aims to make significant contributions to the field of blockchain transaction analysis by introducing a custom data encoding compatible with the GPT transformer, a domain-specific tokenization technique, and a tree encoding method specifically crafted for the EVM trace representation. The proposed grant project will enable us to develop BlockGPT for anomaly detection of EVM transactions, benefiting the blockchain industry and facilitating secure and efficient blockchain transactions.
+        </p>
+
+        <h2 id="services">Outcomes</h2>
+        <ul>
+            <li>
+                How does this project benefit the greater Ethereum ecosystem?
+            </li>
+        </ul>
+
+        <p style="text-align:left;">
+        The proposed grant project, which aims to develop BlockGPT for anomaly detection of EVM transactions, will benefit the greater Ethereum ecosystem in several ways.
+
+        <p style="text-align:left;">
+        Firstly, BlockGPT will enhance the security of the Ethereum ecosystem by providing a dynamic, real-time approach to detecting anomalous transactions. By utilizing a scalable GPT-2-based language model and generating tracing representations of blockchain activity, BlockGPT can quickly identify abnormal transactions and trigger an early investigation or a smart contract pause mechanism to prevent an attack.
+        </p>
+
+        <p style="text-align:left;">
+        Secondly, BlockGPT will provide a valuable tool for users, liquidity providers, speculators, and protocol operators in the Ethereum ecosystem, as it will help them avoid significant losses caused by attack transactions. Further, BlockGPT will create a list of abnormal transactions, potentially identifying new and previously unknown abnormal transactions. The dataset generated by BlockGPT will be transparent, timestamped, and non-repudiable, providing insights into user behavior and DApp interactions, which can be used to further improve the security of the Ethereum ecosystem.
+        </p>
+
+        <p style="text-align:left;">
+        Thirdly, BlockGPT will introduce new methods and techniques for blockchain transaction analysis, such as a custom data encoding compatible with the GPT transformer, a domain-specific tokenization technique, and a tree encoding method specifically crafted for the EVM trace representation. These contributions will be beneficial for the broader blockchain community, as they can be adapted for other machine learning based blockchain transaction analysis.
+        </p>
+        <p style="text-align:left;">
+        In summary, the BlockGPT project will benefit the greater Ethereum ecosystem by providing a real-time and scalable approach to detecting anomalous transactions, improving the security of the ecosystem, and introducing new methods and techniques for blockchain transaction analysis that can fundamentally shape blockchain security.
+        </p>
+
+        <h2 id="scope">Grant Scope</h2>
+        <ul>
+            <li>
+                What are you going to research? What is the expected output?
+            </li>
+        </ul>
+
+        <p style="text-align:left;">
+        The proposed grant project aims to research and develop BlockGPT for anomaly detection of EVM transactions. The expected output of this research will be a dynamic and learning-based approach to detecting anomalous transactions in permissionless blockchains such as Ethereum. BlockGPT will be a real-time intrusion detection system that generates efficient tracing representations of blockchain activity and trains a scalable GPT-2-based language model for anomaly detection.
+        </p>
+        <p style="text-align:left;">
+        We plan to evaluate the performance of BlockGPT by using it as an anomaly detection tool for Ethereum transactions, utilizing a dataset of 68M transactions and 124 attacks. The results of our evaluation will hopefully demonstrate the effectiveness of BlockGPT in identifying abnormal transactions. We will also evaluate the efficacy of this approach with suitable detection or anomaly thresholds to minimize false positives.
+        </p>
+        <p style="text-align:left;">
+        We intend to make BlockGPT an open-source tool under a permissive license, together with the 68M transaction dataset and the 124 attacks, including the results from BlockGPT. This will enable other researchers and developers to use and build upon our work, further advancing the field of blockchain transaction analysis and improving the security and efficiency of blockchain transactions.
+        </p>
+        <p style="text-align:left;">
+        We also plan to write a scientific paper containing all details of our research, including the development of BlockGPT, the evaluation of its performance, and the contributions it makes to the field of blockchain transaction analysis. This paper will be published in a reputable scientific journal or conference, providing a rigorous and transparent account of our research for the benefit of the broader blockchain community.
+        </p>
+
+        <h2 id="scope">Project Team</h2>
+        <ul>
+            <li>
+                How many people are working on this project?
+            </li>
+            <li>
+                Please list their names and roles for the project as well as how many hours per month will each person work on this project?
+            </li>
+        </ul>
+
+        The project team consists of four people, two professors and two PhD students.
+        </p>
+        <p style="text-align:left;">
+        Arthur Gervais, Associate Professor at UCL, and Dawn Song, Professor at UC Berkeley, will be leading the project as the principal investigators. They will be responsible for the overall direction and management of the project, including the development of BlockGPT, the evaluation of its performance, and the writing of the scientific paper. They will each work 20 hours per week on the project.
+        </p>
+        <p style="text-align:left;">
+        The two PhD students working on the project are Liyi Zhou and Yu Gai. They will assist the principal investigators in developing and evaluating BlockGPT, as well as in writing the scientific paper. They will each work 20 hours per week on the project.
+
+        <h2 id="scope">Project Team</h2>
+        <ul>
+            <li>
+                Give us a bit of info and include relevant links, if available! Please provide other projects or research papers (ideally public and/or open source), engagements or other types of proof that your team has the necessary experience to undertake the project you are applying for.
+            </li>
+            <li>
+                Any links for us to review? E.g. research papers, blog posts, etc.
+            </li>
+        </ul>
+
+        The project team has extensive experience in the field of blockchain and security research.
+
+        Arthur Gervais is an Associate Professor at University College London (UCL) and a leading expert in the field of blockchain security. He has published numerous papers on the security and privacy of blockchain systems, including <a href="https://eprint.iacr.org/2016/555">On the security and performance of proof of work blockchains</a>, a <a href="https://www.mlsec.org/topnotch/sec_top100.html">top-100 information security paper of all time</a>.
+
+Dawn Song is a Professor at the University of California, Berkeley, and a renowned expert in computer security and privacy. She has published over 100 research papers on various topics, including blockchain and security, and has won numerous awards for her contributions to the field. One of her recent projects is the Oasis Network, a privacy-enabled blockchain platform.
+
+Liyi Zhou is a PhD student at UCL, working under the supervision of Arthur Gervais. She has previously worked on blockchain security and privacy research, including a recent paper titled "SoK: A Taxonomy of Blockchain Privacy-Preserving Protocols"~\cite{zhou2022sok}, which was published in IEEE Transactions on Information Forensics and Security.
+
+Yu Gai is a PhD student at UC Berkeley, working under the supervision of Dawn Song. He has previously worked on blockchain research, including a recent paper titled "Collaborative Blockchain Anomaly Detection with Privacy Preservation"~\cite{gai2021collaborative}, which was published in the Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security.
+
+The project team has also worked on various open-source projects related to blockchain and security, including:
+
+        <h2 id="scope">Methodology</h2>
+        <ul>
+            <li>
+                How do you plan to achieve your research objectives?
+            </li>
+        </ul>
+
+        <h2 id="scope">Timeline</h2>
+        <ul>
+            <li>
+                Please include a brief explanation on the milestones/roadmap, along with expected deliverables. Also outline how the funds will be used for the research project and or members of the team.
+            </li>
+        </ul>
+
+        <h2 id="scope">Budget</h2>
+        <ul>
+            <li>
+                Requested grant amount and how this will be used
+            </li>
+            <li>
+                Please provide an requested amount and outline of how the grant will be used. A detailed budget proposal would be helpful and some item you could include are: Principle Researchers Costs, Other Staff Costs, Hardware Costs, Software Costs, Data Collection Costs, Indirect Costs
+            </li>
+        </ul>
+
+    </article>
+</main>
+
+</body>
+
+<hr>
+
+<footer>
+    <p>Made using <a href="https://latex.vercel.app">https://latex.vercel.app</a> &#10084; &#10084;</p>
+</footer>
+
+</html>
