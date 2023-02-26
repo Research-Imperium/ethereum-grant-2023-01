@@ -13,11 +13,13 @@
 <body>
 <h1>Large Language Models for Anomaly Detection of EVM Transactions</h1>
 <p class="author">
-    Arthur Gervais & Dawn Song<br>
-    <a href="https://twitter.com/HatforceSec">[Twitter]</a>
-    <a href="https://arthurgervais.com">[Website]</a> <a href="https://github.com/arthurgervais">[Github]</a>
-    <a href="https://scholar.google.com.au/citations?user=xEXQBfMAAAAJ&hl=en">[Google Scholar]</a><br>
-    Email: arthur (at) gervais (dot) cc<br> Last Update: February 23, 2023
+    Yu Gai, Liyi Zhou, Dawn Song, Arthur Gervais<br>
+    <a href="https://twitter.com/dawnsongtweets">[Twitter Dawn]</a> <a href="https://twitter.com/HatforceSec">[Twitter Arthur]</a>
+    <a href="https://arthurgervais.com">[Website Arthur]</a> <a href="https://rdi.berkeley.edu/">[Website Dawn]</a> 
+    <a href="https://github.com/arthurgervais">[Github Arthur]</a>
+    <a href="https://scholar.google.com.au/citations?user=xEXQBfMAAAAJ&hl=en">[Google Scholar - Arthur]</a><a href="https://scholar.google.com/citations?hl=en&user=84WzBlYAAAAJ">[Google Scholar - Dawn]</a>
+    <br>
+    Email: arthur (at) gervais (dot) cc<br> Last Update: February 26, 2023
 </p>
 
 <div class="abstract">
@@ -120,6 +122,7 @@
         </p>
         <p style="text-align:left;">
         The two PhD students working on the project are Liyi Zhou and Yu Gai. They will assist the principal investigators in developing and evaluating BlockGPT, as well as in writing the scientific paper. They will each work 20 hours per week on the project.
+        </p>
 
         <h2 id="scope">Project Team</h2>
         <ul>
@@ -133,15 +136,31 @@
 
         The project team has extensive experience in the field of blockchain and security research.
 
+        <p style="text-align:left;">
         Arthur Gervais is an Associate Professor at University College London (UCL) and a leading expert in the field of blockchain security. He has published numerous papers on the security and privacy of blockchain systems, including <a href="https://eprint.iacr.org/2016/555">On the security and performance of proof of work blockchains</a>, a <a href="https://www.mlsec.org/topnotch/sec_top100.html">top-100 information security paper of all time</a>.
+        </p>
 
-Dawn Song is a Professor at the University of California, Berkeley, and a renowned expert in computer security and privacy. She has published over 100 research papers on various topics, including blockchain and security, and has won numerous awards for her contributions to the field. One of her recent projects is the Oasis Network, a privacy-enabled blockchain platform.
+        <p style="text-align:left;">
+        Dawn Song is a Professor at the University of California, Berkeley, and a renowned expert in computer security and privacy. She has published over 100 research papers on various topics, including blockchain and security, and has won numerous awards for her contributions to the field. One of her recent projects is the Oasis Network, a privacy-enabled blockchain platform.
+        </p>
 
-Liyi Zhou is a PhD student at UCL, working under the supervision of Arthur Gervais. She has previously worked on blockchain security and privacy research, including a recent paper titled "SoK: A Taxonomy of Blockchain Privacy-Preserving Protocols"~\cite{zhou2022sok}, which was published in IEEE Transactions on Information Forensics and Security.
+        <p style="text-align:left;">
+        Liyi Zhou is a PhD student at UCL, working with Arthur Gervais. He has previously worked on blockchain security and privacy research, including a recent paper on the <a href="https://arxiv.org/abs/2101.05511">Blockchain Dark forest</a>, and on recent <a href="https://eprint.iacr.org/2022/1773">DeFi Attacks</a>.
+        </p>
 
-Yu Gai is a PhD student at UC Berkeley, working under the supervision of Dawn Song. He has previously worked on blockchain research, including a recent paper titled "Collaborative Blockchain Anomaly Detection with Privacy Preservation"~\cite{gai2021collaborative}, which was published in the Proceedings of the 2021 ACM SIGSAC Conference on Computer and Communications Security.
+        <p style="text-align:left;">
+        Yu Gai is a PhD student at UC Berkeley, working under the supervision of Dawn Song. He has previously worked on machine learning research, with a focus on Deep and Graph Neural Networks. Yu in particular contributed to the <a href="https://arxiv.org/abs/1909.01315">Deep Graph Library</a>, a Graph-Centric, Highly-Performant Package for Graph Neural Networks.
+        </p>
 
-The project team has also worked on various open-source projects related to blockchain and security, including:
+        The project team has also worked on various open-source and educational projects related to blockchain and security, including:
+        <ul>
+            <li><a href="https://defi-learning.org/">Massive Open Online Course on Decentralized Finance</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLS01nW3RtgoqeqHqOZ7NYdPR9CJRGZxf7">Podcast Fireside Chat with DeFi leaders</a></li>
+            <li><a href="https://github.com/arthurgervais/Bitcoin-Simulator">Blockchain Network Simulator</a></li>
+            <li><a href="http://www.blockchainworkbench.com">Blockchain Workbench, a solidity learning platform</a></li>
+        </ul>
+
+        In addition, the project team has published numerous papers in top-tier academic conferences and journals, including IEEE Symposium on Security and Privacy, USENIX Security Symposium, and ACM Conference on Computer and Communications Security. Overall, the project team has the necessary experience and expertise to undertake the proposed research project on developing and evaluating BlockGPT for anomaly detection of EVM transactions.
 
         <h2 id="scope">Methodology</h2>
         <ul>
@@ -150,12 +169,62 @@ The project team has also worked on various open-source projects related to bloc
             </li>
         </ul>
 
+        To achieve our research objectives, we plan to follow the following methodology:
+
+        <ol>
+            <li>
+                <b>Develop BlockGPT:</b> We will develop BlockGPT, a dynamic and learning-based approach to detecting anomalous transactions in permissionless blockchains such as Ethereum. BlockGPT will be a real-time intrusion detection system that generates efficient tracing representations of blockchain activity and trains a scalable GPT-2-based language model for anomaly detection.
+            </li>
+
+            <li>
+                <b>Train BlockGPT:</b> We will train BlockGPT using Ethereum as an open dataset, using a dataset of 68M transactions and their associated EVM traces. We will design a custom data encoding to be compatible with the GPT transformer, and a domain-specific tokenization technique for encoding EVM traces. We will also design and implement a tree encoding method that is specifically crafted for the EVM trace tree representation. This will allow us to capture any involved smart contract calls, function names, parameters, and storage modifications from the EVM trace.
+            </li>
+
+            <li>
+                <b>Evaluate BlockGPT:</b> We will evaluate the performance of BlockGPT as a transaction anomaly analysis tool for Ethereum transactions. We will extend the dataset to include attacks over a timeframe of four years, spanning a total of 124 attacks and a total of 68M transactions. We will evaluate BlockGPT's ability to identify abnormal transactions and its real-time capabilities by measuring its throughput.
+            </li>
+
+            <li>
+                <b>Write a scientific paper:</b> We will write a scientific paper detailing the development, evaluation, and contributions of BlockGPT to the field of blockchain transaction analysis. This paper will contain all the details of our research, including the development of BlockGPT, the evaluation of its performance, and the contributions it makes to the field of blockchain transaction analysis. We plan to publish the paper in a reputable scientific journal or conference.
+            </li>
+
+            <li>
+                <b>Make BlockGPT open source:</b> We will make BlockGPT an open-source tool under a permissive license, together with the 68M transaction dataset and the 124 attacks, including the results from BlockGPT. This will enable other researchers and developers to use and build upon our work, further advancing the field of blockchain transaction analysis and improving the security and efficiency of blockchain transactions.
+            </li>
+        </ol>
+        By following this methodology, we expect to achieve our research objectives of developing and evaluating BlockGPT for anomaly detection of EVM transactions, contributing to the field of blockchain transaction analysis, and improving the security and efficiency of blockchain transactions.
+
         <h2 id="scope">Timeline</h2>
         <ul>
             <li>
                 Please include a brief explanation on the milestones/roadmap, along with expected deliverables. Also outline how the funds will be used for the research project and or members of the team.
             </li>
         </ul>
+
+        <p>The project is expected to take 6 months to complete, with the following timeline and milestones:</p>
+        
+        <p><b>Month 1-2:</b><br>
+        - Develop BlockGPT: Design a custom data encoding to be compatible with the GPT transformer and a domain-specific tokenization technique for encoding EVM traces. Implement a tree encoding method that is specifically crafted for the EVM trace tree representation.<br>
+        - Extract the dataset: Build the dataset of 68M transactions and their associated EVM traces. Extract the 124 attacks for this work.</p>
+        <p><b>Month 3-4:</b><br>
+        - Evaluate BlockGPT: Evaluate and improve BlockGPT's performance in identifying abnormal transactions in the Ethereum blockchain.<br>
+        </p>
+        <p><b>Month 5-6:</b><br>
+        - Evaluate BlockGPT: Finalize the evaluation of BlockGPT's performance and analyze the results.<br>
+        - Write a scientific paper: Writing of a scientific paper detailing the development, evaluation, and contributions of BlockGPT to the field of blockchain transaction analysis. Include the evaluation results.
+        - Make BlockGPT open source: Make BlockGPT an open-source tool under a permissive license, together with the 68M transaction dataset and the 124 attacks, including the results from BlockGPT.
+        </p>
+        
+        <p><b>Expected deliverables:</b><br>
+        - A scientific paper detailing the development, evaluation, and contributions of BlockGPT to the field of blockchain transaction analysis.<br>
+        - An open-source tool of BlockGPT under a permissive license, together with the 68M transaction dataset and the 124 attacks.</p>
+        
+        <p><b>Funds breakdown:</b><br>
+        - Personnel: The funds will be used to pay for the four project team members.<br>
+        - Equipment: The funds will be used to cover any equipment costs necessary for the development and evaluation of BlockGPT, such as GPUs.<br>
+        - Travel and miscellaneous expenses: The funds will be used to cover any travel or miscellaneous expenses incurred during the course of the project, such as attending conferences to present the BlockGPT paper or purchasing necessary materials.</p>
+        
+        <p>Overall, the funds will be used to support the project team in their development and evaluation of BlockGPT, as well as in the dissemination of their findings through the publication of a scientific paper and the open-sourcing of BlockGPT.</p>
 
         <h2 id="scope">Budget</h2>
         <ul>
@@ -166,6 +235,19 @@ The project team has also worked on various open-source projects related to bloc
                 Please provide an requested amount and outline of how the grant will be used. A detailed budget proposal would be helpful and some item you could include are: Principle Researchers Costs, Other Staff Costs, Hardware Costs, Software Costs, Data Collection Costs, Indirect Costs
             </li>
         </ul>
+
+        <p>Based on the project team's roles and responsibilities, the total cost of the project is estimated to be $360,000. The breakdown of the budget proposal is as follows:</p>
+
+        <ul>
+          <li><strong>Principle Researchers Costs:</strong> $240,000 ($120,000 per professor) for the 6-month period of the project. The principle researchers will work 20 hours per week on the project.</li>
+          <li><strong>Other Staff Costs:</strong> $120,000 ($60,000 per PhD student) for the 6-month period of the project. The PhD students will work 20 hours per week on the project.</li>
+          <li><strong>Hardware Costs:</strong> $30,000 for renting any necessary hardware, such as GPUs for the GPT training and model inference.</li>
+          <li><strong>Data Collection Costs:</strong> $0 as we plan to use our own dataset exploration capabilities.</li>
+          <li><strong>Indirect Costs:</strong> $70,000 for overhead costs, such as office space, utilities, and administrative expenses.</li>
+        </ul>
+        <p>Total budget: $360,000</p>
+
+        <p>The requested grant amount is 20% of the $360,000: $72,000. The support will be used to cover the pro-rata costs of the project team's salaries, necessary hardware and software, and overhead expenses. All expenses will be tracked and reported to ensure transparency and accountability in the use of the grant funds.</p>
 
     </article>
 </main>
